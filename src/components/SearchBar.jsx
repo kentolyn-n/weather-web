@@ -5,7 +5,7 @@ export default function SearchBar({ onSearch, onChange, value }) {
     <div className="flex items-center gap-2">
       <input
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e) => onChange(e.target.value.trim())}
         placeholder="Search city..."
         className="w-full p-2 rounded-lg glass"
       />
